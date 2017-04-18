@@ -99,6 +99,9 @@
 
                 if (switchedOn) {
             	    series.color = series.oldColor;
+            	    if (!mouseOut) {
+            	        setHidden(options, label, false);
+            	    }
                     setHidden(options, label, false);
             	}
             }
